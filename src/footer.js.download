@@ -1,0 +1,18 @@
+document.write( '<section id=\"footerBottom\">\n' );
+document.write( '	<div class=\"container\">\n' );
+document.write( '		<div class=\"row\">\n' );
+document.write( '			<div class=\"col-sm-2\"><img src=\"images/Safariwale-Wlogo-Footer.png\" alt=\"Safariwale\"></div>\n' );
+document.write( '			<div class=\"col-sm-10\">\n' );
+document.write( '				<div class=\"footerLinks pull-right\">\n' );
+document.write( '					<ul>\n' );
+document.write( '						<li class=\"active7\"><a href=\"contact-us.html\">Contact Us</a></li>\n' );
+document.write( '					</ul>\n' );
+document.write( '					<ul>\n' );
+document.write( '						<li>&copy; 2021 Safariwala.com All rights reserved. - This website is best viewed on Google Chrome, Safari, IE 11+ & Mozilla Firefox,   I  Design & Developed by D3-Studio</li>\n' );
+document.write( '					</ul>\n' );
+document.write( '				</div>\n' );
+document.write( '			</div>\n' );
+document.write( '		</div>\n' );
+document.write( '	</div>\n' );
+document.write( '	<a href=\"#\" class=\"scrollup\" style=\"display: none;\">Scroll</a>\n' );
+document.write( '</section>' );
