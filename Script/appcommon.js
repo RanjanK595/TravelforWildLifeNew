@@ -2,8 +2,8 @@
  
     var ht = '<div class="carousel-item active">' +
         ' <div class="card">' +
-        ' <div class="img-wrapper">' +
-        ' <img src="Image/Upcomming/1.png" alt="...">' +
+        ' <div class="img-wrapper customcardbody">' +
+        ' <img src="Image/Upcomming/1.jpeg" alt="..."  />' +
         ' </div>' +
         ' <div class="card-body customcardbody">' +
       
@@ -17,8 +17,8 @@
     for (var i = 2; i <= lengthdetails.upcomming; i++) {
         ht = ht+'<div class="carousel-item">' +
             ' <div class="card">' +
-            ' <div class="img-wrapper">' +
-            ' <img src="Image/Upcomming/' + i +'.png" alt="...">' +
+            ' <div class="img-wrapper customcardbody">' +
+            ' <img src="Image/Upcomming/' + i +'.jpeg" alt="..." />' +
             ' </div>' +
             ' <div class="card-body customcardbody">' +
           
@@ -54,7 +54,7 @@ function getLeftSideBar(act) {
         '<li id="headerlist" > <a>Wildlife Tours</a></li>' +
         '<li> <a href="tadoba.html">Tadoba Tour</a></li > ' +
         '<li> <a href="pench.html">Pench Tour</a></li > ' +
-        '<li> <a href="ranthambore.html">Ranthambore Tour</a></li > ' +
+        '<li> <a href="ranthambor.html">Ranthambor Tour</a></li > ' +
         '<li> <a href="tippeshwar.html">Tippeshwar Tour</a></li > ' +
         '<li> <a href="kanha.html">Kanha Tour</a></li > ' +
         '<li> <a href="corbett.html">Corbett Tour</a></li > ' +
@@ -68,4 +68,29 @@ function getLeftSideBar(act) {
     var allchild = $('#ulsideBar').children('li');
     $(allchild[act]).addClass('activetour');
 
+}
+
+function getHeader() {
+    var ht = '<nav class="navbar navbar-expand-lg navbar-light bg-dark">' +
+        '<div class="container-fluid" >' +
+        '<a href="#" class="navbar-brand">' +
+        '<img src="./src/Travelforwildlife.png" height="60" />' +
+        ' </a>' +
+        ' <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">' +
+        ' <span class="navbar-toggler-icon"></span>' +
+        ' </button>' +
+        '<div class="collapse navbar-collapse" id="navbarCollapse">' +
+        '<div class="navbar-nav" id="test">' +
+        '<a href="./AboutUs.html" class="nav-item nav-link active">About Us</a>' +
+        '<a href="./Pench.html" class="nav-item nav-link">Wildlife Tours</a>' +
+
+        '<a href="./Gallery.html" class="nav-item nav-link">Gallery</a>' +
+        '<a href="./Contact Us.html" class="nav-item nav-link">Contact US</a>' +
+        '<a href="#" class="nav-item nav-link">Review</a>' +
+        ' </div>' +
+
+        '</div>' +
+        '</div >' +
+        ' </nav > ';
+    $('.header').html(ht);
 }

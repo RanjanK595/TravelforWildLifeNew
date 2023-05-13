@@ -1,17 +1,56 @@
-﻿#carouselExampleControls .img-wrapper {
+﻿/*#recipeCarousel .img-wrapper {
     max-width: 100%;
     height: 65vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-}
+}*/
 
-#carouselExampleControls img {
+#recipeCarousel img {
     max-width: 100%;
-    max-height: 100%;
+    max-height:100%
+  
+}
+#recipeCarousel .img-wrapper {
+    max-width: 100%;
+  
+  
+    justify-content: center;
+    align-items: flex-start;
+}
+#recipeCarousel .card {
+    margin: 0 0.5em;
+    border-radius: 0;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    font-size: 0.9em;
+}
+#recipeCarousel .carousel-inner {
+    padding: 1em;
+}
+#recipeCarousel img {
+    min-width: 100%;
+   height:300Px;
+    transition: 0.3s;
+}
+.customcardbody {
+    padding:6%;
+}
+#recipeCarousel .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 332px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
 }
 
-@media screen and (min-width: 576px) {
+#recipeCarousel img:hover {
+    transform: scale(1.1);
+}
+/*@media screen and (min-width: 576px) {
     #carouselExampleControls .carousel-inner {
         display: flex;
     }
@@ -116,16 +155,20 @@
 .bg-dark {
     background-color: #47494a !important;
 }
-
+#hamburg span {
+    color: white;
+}
 /* Style the header with a grey background and some padding */
 .header {
-    overflow: hidden;
-    /*       background-color: #f1f1f1;*/
+    /* overflow: hidden;*/
+    background-color: #47494a !important;
+    color: aliceblue;
     padding: 20px 10px;
+    opacity: 0.5;
 }
 
     /* Style the header links */
-    .header a {
+   /* .header a {
         float: left;
         color: black;
         text-align: center;
@@ -134,7 +177,8 @@
         font-size: 18px;
         line-height: 25px;
         border-radius: 4px;
-    }
+        hite-space: nowrap;
+    }*/
         /**/
         /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
         .header a.logo {
@@ -142,23 +186,33 @@
             font-weight: bold;
         }
 
-        /* Change the background color on mouse-over */
-        .header a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        /* Style the active/current link*/
-        .header a.active {
-            background-color: dodgerblue;
-            color: white;
-        }
-
-/* Float the link section to the right */
-.header-right {
-    float: right;
+/* Change the background color on mouse-over */
+#listnav a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
+#test {
+    margin-left: 22%;
+   
+}
+
+        /* Style the active/current link*/
+        /*.header a.active {
+            background-color: dodgerblue;
+            color: white;
+        }*/
+
+/* Float the link section to the right */
+/*.header-right {
+    float: right;
+}*/
+.colorwhite{
+    color:aliceblue;
+}
+#test a{
+    color:white;
+}
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
     .header a {
@@ -166,9 +220,22 @@
         display: block;
         text-align: left;
     }
+    .header {
+        /* overflow: hidden; */
+        background-color: #47494a !important;
+        color: aliceblue;
+        padding: 20px 10px;
+        opacity: 1;
+    }
 
     .header-right {
         float: none;
+    }
+    #navbarCollapse{
+        opacity:1;
+    }
+    #test{
+        margin-left:0px;
     }
 }
 
@@ -215,4 +282,19 @@ p{
 }
 span {
     color: white;
+}
+
+#listnav li > a:hover {
+    color: black;
+    background-color:none;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-top: 0.5rem; */
+    /* padding-bottom: 0.5rem; */
 }
